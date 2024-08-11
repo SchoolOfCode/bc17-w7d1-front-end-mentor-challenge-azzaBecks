@@ -1,8 +1,79 @@
 body {
-    color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252, 241, 227);
+    padding: 110px;
+    margin: 0;
 }
 
-head {
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+
+img {
+    width:400px;
+    padding: 1em;
+    float:left;
+}
+
+.perfume {
+    font-family:Montserrat;
+    margin:auto;
+    padding-top: 10%;
+}
+
+.title {
+    font-family: Fraunces;
+    font-size: 20px;
+}
+
+.description {
+    font-family: Montserrat;
+
+}
+
+.price {
+    font-family: Fraunces;
+    font-size: 30px;
+    font-weight: 700;
+    color: green;
+    display:inline;
+}
+
+.price2 {
+    font-family: Montserrat;
+    display: inline;
+    font-style: line-through;
+    text-decoration: line-through;
+}
+
+button {
+    padding: 1em;
+    width:245px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: green;
+    color: antiquewhite;
+    border: none;
+    border-radius: 15px;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+    }
+    
+    img {
+        width: 50%;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    .perfume, .title, .description, .price, .price2, .cart {
+        width: 50%;
+        padding: 1em;
+    }
 }
